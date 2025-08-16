@@ -22,58 +22,58 @@ This project simulates a real-world financial application where accurate predict
 
 **Steps Taken:**  
 1. Data Loading & Inspection :
-2. 
-Loaded loan_approval_dataset.csv into Pandas.
 
-Checked data shape, column info, and missing values.
+- Loaded loan_approval_dataset.csv into Pandas.
 
-Performed duplication checks and standardized column names.
+- Checked data shape, column info, and missing values.
+
+- Performed duplication checks and standardized column names.
 
 2. Data Cleaning & Preprocessing :
 
-Fixed categorical inconsistencies (e.g., Self_Employed mapped to boolean values).
+- Fixed categorical inconsistencies (e.g., Self_Employed mapped to boolean values).
 
-Handled missing values and formatted data.
+- Handled missing values and formatted data.
 
-Outliers detected and capped using the IQR method.
+- Outliers detected and capped using the IQR method.
 
-Applied Label Encoding for categorical variables.
+- Applied Label Encoding for categorical variables.
 
-Applied StandardScaler to normalize numerical features.
+- Applied StandardScaler to normalize numerical features.
 
 3. Exploratory Data Analysis (EDA) :
 
-Univariate Analysis: Plotted distributions for numerical (income, loan amount, CIBIL score, etc.) and categorical features.
+- Univariate Analysis: Plotted distributions for numerical (income, loan amount, CIBIL score, etc.) and categorical features.
 
-Bivariate Analysis: Explored relationships (e.g., income vs. loan amount with loan status).
+- Bivariate Analysis: Explored relationships (e.g., income vs. loan amount with loan status).
 
-Correlation Analysis: Heatmap of numerical features using Spearman correlation.
+- Correlation Analysis: Heatmap of numerical features using Spearman correlation.
 
 4. Data Splitting & Imbalance Handling :
 
-Split dataset into train (80%) and test (20%) sets.
+- Split dataset into train (80%) and test (20%) sets.
 
-Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique) to avoid biased predictions.
+- Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique) to avoid biased predictions.
 
 5. Model Training :
 
-Trained two models for comparison:
+- Trained two models for comparison:
 
-Logistic Regression
+  Logistic Regression
 
-Decision Tree Classifier
+  Decision Tree Classifier
 
 6. Model Evaluation :
 
-Evaluated with confusion matrix, precision, recall, F1-score, and accuracy.
+- Evaluated with confusion matrix, precision, recall, F1-score, and accuracy.
 
-Visualized results with seaborn heatmaps and sklearn’s confusion matrix display.
+- Visualized results with seaborn heatmaps and sklearn’s confusion matrix display.
 
 7. Model Comparison :
 
-Logistic Regression: Baseline model, worked but lower recall/precision.
+- Logistic Regression: Baseline model, worked but lower recall/precision.
 
-Decision Tree: Outperformed Logistic Regression in recall and precision, making it the better choice for this dataset. 
+- Decision Tree: Outperformed Logistic Regression in recall and precision, making it the better choice for this dataset. 
 
 **Results:**  
 - F1-Score: 96.6%  
