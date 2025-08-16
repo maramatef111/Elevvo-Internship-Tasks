@@ -75,7 +75,7 @@ This project simulates a real-world financial application where accurate predict
 
 - Decision Tree: Outperformed Logistic Regression in recall and precision, making it the better choice for this dataset. 
 
-**Results:**  
+**Results: (Decision Tree)**  
 - F1-Score: 96.6%  
 - Precision: 96.3%  
 - Recall: 96.9%  
