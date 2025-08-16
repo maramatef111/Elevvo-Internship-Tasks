@@ -19,16 +19,17 @@ Each task demonstrates practical applications of **Machine Learning** concepts.
 **Goal:** 
 The goal of this project is to build a machine learning model that predicts whether a loan application will be approved or rejected, based on applicant and financial attributes.
 This project simulates a real-world financial application where accurate predictions can help banks and institutions reduce risks and improve decision-making.
-**Steps Taken:**  
-1. Data Loading & Inspection
 
+**Steps Taken:**  
+1. Data Loading & Inspection :
+2. 
 Loaded loan_approval_dataset.csv into Pandas.
 
 Checked data shape, column info, and missing values.
 
 Performed duplication checks and standardized column names.
 
-2. Data Cleaning & Preprocessing
+2. Data Cleaning & Preprocessing :
 
 Fixed categorical inconsistencies (e.g., Self_Employed mapped to boolean values).
 
@@ -40,7 +41,7 @@ Applied Label Encoding for categorical variables.
 
 Applied StandardScaler to normalize numerical features.
 
-3. Exploratory Data Analysis (EDA)
+3. Exploratory Data Analysis (EDA) :
 
 Univariate Analysis: Plotted distributions for numerical (income, loan amount, CIBIL score, etc.) and categorical features.
 
@@ -48,13 +49,13 @@ Bivariate Analysis: Explored relationships (e.g., income vs. loan amount with lo
 
 Correlation Analysis: Heatmap of numerical features using Spearman correlation.
 
-4. Data Splitting & Imbalance Handling
+4. Data Splitting & Imbalance Handling :
 
 Split dataset into train (80%) and test (20%) sets.
 
 Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique) to avoid biased predictions.
 
-5. Model Training
+5. Model Training :
 
 Trained two models for comparison:
 
@@ -62,13 +63,13 @@ Logistic Regression
 
 Decision Tree Classifier
 
-6. Model Evaluation
+6. Model Evaluation :
 
 Evaluated with confusion matrix, precision, recall, F1-score, and accuracy.
 
 Visualized results with seaborn heatmaps and sklearn’s confusion matrix display.
 
-7. Model Comparison
+7. Model Comparison :
 
 Logistic Regression: Baseline model, worked but lower recall/precision.
 
