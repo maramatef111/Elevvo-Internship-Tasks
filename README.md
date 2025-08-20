@@ -20,6 +20,7 @@ Each task demonstrates practical applications of **Machine Learning** concepts.
 The goal of this project is to segment customers based on annual income and spending score to identify distinct groups of shopping behavior. This segmentation helps businesses design targeted marketing strategies and improve customer relationship management.
 
 **Steps Taken:** 
+
 1- Data Preparation
 
 - Cleaned the dataset, focusing on Annual Income and Spending Score.
