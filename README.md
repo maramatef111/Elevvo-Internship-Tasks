@@ -75,15 +75,65 @@ This project simulates a real-world financial application where accurate predict
 
 - Decision Tree: Outperformed Logistic Regression in recall and precision, making it the better choice for this dataset. 
 
-**Results: (Decision Tree)**  
+**Resuls : (Decision Tree)**
 - F1-Score: 96.6%  
 - Precision: 96.3%  
 - Recall: 96.9%  
 
 -----
+### 🔹 Task 2: Sales Forecasting Description
+**Goal:** 
+The goal of this project is to predict weekly sales for Walmart stores using historical sales, store information, economic indicators, promotions, and seasonal effects.
+Accurate forecasting can help optimize inventory, staffing, and promotional strategies.
+**Steps Taken:**  
+1- Data Preparation & Merging
+
+- Combined train, features, and store data into a single DataFrame.
+
+- Resolved missing values in MarkDown columns and consolidated duplicate IsHoliday columns.
+
+2- Feature Engineering
+
+- Extracted time-based features: Year, Month, DayOfWeek.
+
+- Created lag feature: Weekly_Sales_Lag_1.
+
+- Added rolling averages (Weekly_Sales_Roll4, Weekly_Sales_Roll12) for trend smoothing.
+
+- Performed seasonal decomposition for trend/seasonality analysis.
+
+- Encoded categorical variable Type using one-hot encoding.
+
+3-Handling Missing Values
+
+- Filled missing MarkDown values and lagged sales with 0.
+
+- Consolidated duplicate IsHoliday into a single binary column.
+
+4- Model Training
+
+- Split dataset by time (pre-2012 = training, post-2012 = testing).
+
+- Trained three regression models:
+
+         Linear Regression (baseline)
+
+         XGBoost (gradient boosting)
+
+         LightGBM (optimized gradient boosting)
+
+4- Model Evaluation
+
+Compared models using MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error).
+
+Conducted seasonal decomposition visualizations for deeper insights.
+**Results :**
+- Linear Regression - MAE: 2484.09, RMSE: 4406.50
+- XGBoost - MAE: 1811.48, RMSE: 3990.33
+- LightGBM - MAE: 1805.68, RMSE: 3979.01
 ## 📊 Dataset Section
 
 ### 📂 Dataset Sources
 - **Task 1 Dataset**: https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset/data
-- **Task 2 Dataset**: [Name or link]  
+- **Task 2 Dataset**: https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast/data 
 - **Task 3 Dataset**: [Name or link] 
