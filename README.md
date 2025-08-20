@@ -51,13 +51,13 @@ The goal of this project is to segment customers based on annual income and spen
 
        High income / High spending
 
-      Low income / High spending
+       Low income / High spending
 
-     High income / Low spending
+       High income / Low spending
 
-     Low income / Low spending
+      Low income / Low spending
 
-     Average income / Average spending
+      Average income / Average spending
 
 Average spending scores per cluster ranged from 17 → 82, showing clear behavioral differences.
 
