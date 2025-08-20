@@ -15,7 +15,61 @@ Each task demonstrates practical applications of **Machine Learning** concepts.
 ---
 ## 📝 Tasks Overview
 
-### 🔹 Task 1: [Loan Approval Prediction]  
+### 🔹 Task 1 : [Customer Segmentation]
+**Goal:** 
+The goal of this project is to segment customers based on annual income and spending score to identify distinct groups of shopping behavior. This segmentation helps businesses design targeted marketing strategies and improve customer relationship management.
+
+**Steps Taken:** 
+1- Data Preparation
+
+- Cleaned the dataset, focusing on Annual Income and Spending Score.
+
+- Standardized the features to ensure balanced clustering.
+
+2- K-Means Clustering
+
+- Applied the elbow method  to determine the optimal number of clusters.
+
+- Chose 5 clusters as the best fit.
+
+3- DBSCAN Clustering
+
+- Applied DBSCAN with default parameters (eps=0.5, min_samples=5).
+
+- Identified clusters and noise points.
+
+4-Cluster Analysis
+
+- Compared average spending scores across clusters.
+
+- Interpreted each group’s behavior (high/low income vs. high/low spending).
+  
+**Resuls : (Decision Tree)**
+1- K-Means (5 Clusters)
+
+- Successfully segmented customers into 5 distinct groups:
+
+       High income / High spending
+
+      Low income / High spending
+
+     High income / Low spending
+
+     Low income / Low spending
+
+     Average income / Average spending
+
+Average spending scores per cluster ranged from 17 → 82, showing clear behavioral differences.
+
+2- DBSCAN
+
+- Cluster 0: Customers with lower income and lower spending (avg spending ≈ 43).
+
+- Cluster 1: Smaller group with higher spending (avg spending ≈ 83).
+
+- Noise points (-1): Customers with irregular patterns (avg spending ≈ 47).
+---
+### 🔹 Task 2: [Loan Approval Prediction]  
 **Goal:** 
 The goal of this project is to build a machine learning model that predicts whether a loan application will be approved or rejected, based on applicant and financial attributes.
 This project simulates a real-world financial application where accurate predictions can help banks and institutions reduce risks and improve decision-making.
@@ -81,7 +135,7 @@ This project simulates a real-world financial application where accurate predict
 - Recall: 96.9%  
 
 -----
-### 🔹 Task 2: Sales Forecasting Description
+### 🔹 Task 3: Sales Forecasting Description
 **Goal:** 
 The goal of this project is to predict weekly sales for Walmart stores using historical sales, store information, economic indicators, promotions, and seasonal effects.
 Accurate forecasting can help optimize inventory, staffing, and promotional strategies.
@@ -135,6 +189,6 @@ Conducted seasonal decomposition visualizations for deeper insights.
 ## 📊 Dataset Section
 
 ### 📂 Dataset Sources
-- **Task 1 Dataset**: https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset/data
-- **Task 2 Dataset**: https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast/data 
-- **Task 3 Dataset**: [Name or link] 
+- **Task 1 Dataset**: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
+- **Task 2 Dataset**: https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset/data
+- **Task 3 Dataset**: https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast/data
