@@ -127,6 +127,7 @@ Accurate forecasting can help optimize inventory, staffing, and promotional stra
 Compared models using MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error).
 
 Conducted seasonal decomposition visualizations for deeper insights.
+
 **Results :**
 - Linear Regression - MAE: 2484.09, RMSE: 4406.50
 - XGBoost - MAE: 1811.48, RMSE: 3990.33
