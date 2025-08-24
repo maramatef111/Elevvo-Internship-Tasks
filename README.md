@@ -187,9 +187,89 @@ Conducted seasonal decomposition visualizations for deeper insights.
 - Linear Regression - MAE: 2484.09, RMSE: 4406.50
 - XGBoost - MAE: 1811.48, RMSE: 3990.33
 - LightGBM - MAE: 1805.68, RMSE: 3979.01
+
+### 🔹 Task 4: Traffic Sign Recognition Description 
+**Goal:** 
+The goal of this project is to classify traffic signs from the GTSRB dataset into 43 categories.
+This helps in building intelligent driver-assistance systems (ADAS) and self-driving car applications
+
+**Steps Taken:** 
+1. Data Preparation
+
+- Loaded training images and labels from Train.csv and resized them to 32×32.
+
+- Normalized images (/255) for consistent pixel values.
+
+- Split the dataset into training (80%) and validation (20%) sets with stratified sampling.
+
+- Visualized class distribution and sample images.
+
+2. Data Augmentation
+
+- Applied transformations like rotation, zoom, shifts, and shearing to improve model generalization.
+
+- One-hot encoded labels for multi-class classification.
+
+3. Model 1: Custom CNN
+
+- Built a Convolutional Neural Network with:
+
+      Conv2D + MaxPooling + BatchNormalization layers.
+
+      Dense layer with Dropout for regularization.
+
+      Softmax output for 43 classes.
+
+- Used EarlyStopping, ReduceLROnPlateau, and ModelCheckpoint callbacks.
+
+- Achieved high accuracy on the validation set.
+
+4. Model 2: Transfer Learning with MobileNetV2
+
+- Used MobileNetV2 (pre-trained on ImageNet) as the base model.
+
+- Added custom dense layers with dropout.
+
+- Trained only the top layers while freezing base model weights.
+
+- Saved best-performing model.
+
+5. Model Evaluation
+
+- Compared Custom CNN vs. MobileNetV2 on validation data:
+
+     Generated confusion matrices.
+
+     Calculated precision, recall, and F1-scores.
+
+- Tested both models on Test.csv images.
+
+- Displayed predictions on random images to visualize correctness.
+
+**Results :**
+
+- Custom CNN
+
+    Achieved strong performance with decent validation accuracy.
+
+    Good generalization but slightly weaker than transfer learning.
+
+- MobileNetV2 (Pre-trained Model)
+
+    Outperformed the Custom CNN with higher validation and test accuracy.
+
+    More robust predictions across multiple traffic sign classes.
+
+- Test Set Evaluation
+
+     Both models successfully classified traffic signs, but MobileNetV2 was more accurate and consistent.
+
+     Random predictions visualization showed MobileNetV2 making fewer errors.
+  
 ## 📊 Dataset Section
 
 ### 📂 Dataset Sources
 - **Task 1 Dataset**: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 - **Task 2 Dataset**: https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset/data
 - **Task 3 Dataset**: https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast/data
+- **Task 4 Dataset**: https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign/data
